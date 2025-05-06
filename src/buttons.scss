@@ -1,0 +1,30 @@
+$custom-button-styles: (
+  'mycolor-1': (bg: #ff6600, text: #ffffff),
+  'mycolor-2': (bg: #0066ff, text: #ffffff),
+  'mycolor-3': (bg: #28a745, text: #000000) // green background with black text
+);
+
+@each $name, $colors in $custom-button-styles {
+  $bg: map-get($colors, bg);
+  $text: map-get($colors, text);
+
+  .text-#{$name} {
+    color: $text !important;
+  }
+
+  .bg-#{$name} {
+    background-color: $bg !important;
+  }
+
+  .btn-#{$name} {
+    background-color: $bg !important;
+    color: $text !important;
+    border: 1px solid darken($bg, 10%) !important;
+
+    &:hover {
+      background-color: darken($bg, 5%) !important;
+      border-color: darken($bg, 15%) !important;
+      color: $text !important;
+    }
+  }
+}

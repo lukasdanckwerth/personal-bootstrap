@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components Showcase</title>
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-primary">Bootstrap Components Showcase</h1>
+      <h2 class="text-secondary">Headline 2</h2>
+      <h3 class="text-success">Headline 3</h3>
+      <h4 class="text-warning">Headline 4</h4>
+      <h5 class="text-danger">Headline 5</h5>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
+        voluptatum, doloremque, quod, voluptas, quasi, voluptatibus, doloremque,
+        quod, voluptas, quasi, voluptatibus, doloremque, quod, voluptas, quasi,
+        volupt.
+      </p>
+
+      <pre>Pre</pre>
+
+      <code>Code</code>
+
+      <!-- Alerts -->
+      <section>
+        <h2>Alerts</h2>
+        <div class="alert alert-primary">Primary alert</div>
+        <!-- <div class="alert alert-secondary">Secondary alert</div> -->
+        <div class="alert alert-success">Success alert</div>
+        <div class="alert alert-danger">Danger alert</div>
+        <!-- <div class="alert alert-warning">Warning alert</div> -->
+        <!-- <div class="alert alert-info">Info alert</div> -->
+        <!-- <div class="alert alert-light">Light alert</div> -->
+        <!-- <div class="alert alert-dark">Dark alert</div> -->
+      </section>
+
+      <!-- Buttons -->
+      <section class="mt-4">
+        <h2>Buttons</h2>
+        <div class="mb-2">
+          <button class="mb-2 btn btn-primary">Primary</button>
+          <button class="mb-2 btn btn-secondary">Secondary</button>
+          <button class="mb-2 btn btn-success">Success</button>
+          <button class="mb-2 btn btn-danger">Danger</button>
+          <button class="mb-2 btn btn-warning">Warning</button>
+          <button class="mb-2 btn btn-info">Info</button>
+          <button class="mb-2 btn btn-light">Light</button>
+          <button class="mb-2 btn btn-dark">Dark</button>
+          <button class="mb-2 btn btn-link">Link</button>
+          <button class="mb-2 btn btn-mycolor-1">Orange</button>
+          <button class="mb-2 btn btn-mycolor-2">Blue</button>
+          <button class="mb-2 btn btn-mycolor-3">Green</button>
+        </div>
+      </section>
+
+      <!-- Cards -->
+      <section class="my-4">
+        <h2>Cards</h2>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- List Group -->
+      <section>
+        <h2>List Group</h2>
+        <ul class="list-group" style="max-width: 400px">
+          <li class="list-group-item active">Active item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+          <li class="list-group-item disabled">Disabled item</li>
+        </ul>
+      </section>
+
+      <!-- Forms -->
+      <section class="my-4">
+        <h2>Form Example</h2>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword"
+            />
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="check1" />
+            <label class="form-check-label" for="check1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+      <!-- Navbar (Light) -->
+      <section class="my-5">
+        <h2>Navbar (Light)</h2>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light border rounded px-3"
+        >
+          <a class="navbar-brand" href="#">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Modal -->
+      <section>
+        <h2>Modal</h2>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Launch demo modal
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">This is a Bootstrap modal.</div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion -->
+      <section class="my-5">
+        <h2>Accordion</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Content for the first accordion item.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spinner -->
+      <section>
+        <h2>Spinners</h2>
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </section>
+
+      <!-- Progress -->
+      <section class="my-4">
+        <h2>Progress</h2>
+        <div class="progress">
+          <div class="progress-bar" style="width: 75%">75%</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+// Override Bootstrap variables before importing
+$enable-rounded: false;
+
+$primary: blue;
+$secondary: red;
+
+$font-family-base: 'Segoe UI', sans-serif;
+
+// Import only the parts you need or full bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
