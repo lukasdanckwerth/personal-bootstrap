@@ -1,8 +1,32 @@
+@import "colors.scss";
+
 // Override Bootstrap variables before importing
 $enable-rounded: false;
 
-$primary: blue;
-$secondary: red;
+// $blue: $delft-blue;
+$secondary: $ucla-blue;
+$green: $teaGreen;
+$red: $poppy;
+$yellow: $maize;
+$info: $non-photo-blue;
+$gray: $silver;
+// $primary: #3D8D7A;
+$primary: #3D8D7A;
+$success: #B3D8A8;
+$danger: #F16767;
+$warning: #FCB454;
+
+// $text-primary: #fff;
+$btn-primary-color: #fff;
+$btn-primary: #ffffff;
+$btn-color: #ffffff;
+
+.btn-primary {
+  color: #ffffff !important; // your custom text color
+}
+
+// $primary: $rust-pastel;
+// $secondary: red;
 
 $font-family-base: 'Segoe UI', sans-serif;
 
