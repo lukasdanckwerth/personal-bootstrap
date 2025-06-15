@@ -1,37 +1,41 @@
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  mode: "development",
+  entry: {
+    "custom-bootstrap": "./src/index.js",
+    // styles: "./src/index.scss",
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].js", // Outputs: app.js
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              sassOptions: {
-                // quietDeps: true, // <- this suppresses deprecation warnings from node_modules
-              },
-            },
-          },
-        ],
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: "babel-loader", // Optional, if you use modern JS
       },
       {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        test: /\.s?css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extracts CSS to a separate file
+          "css-loader",
+          "sass-loader",
+        ],
       },
     ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
+  ],
+  resolve: {
+    extensions: [".js", ".scss"],
   },
   devServer: {
     static: "./",
@@ -44,7 +48,7 @@ module.exports = {
       },
     },
   },
-  resolve: {
-    extensions: [".js"],
-  },
+  // optimization: {
+  //   minimize: false, // 🔴 disable all minimizers, including CSS
+  // },
 };

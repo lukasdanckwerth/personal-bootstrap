@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Components Showcase</title>
-    <script src="bundle.js"></script>
+    <script src="custom-bootstrap.js"></script>
+    <link rel="stylesheet" href="custom-bootstrap.css" />
   </head>
   <body>
     <div class="container my-5">
@@ -56,6 +57,60 @@
           <!-- <button class="mb-2 btn btn-mycolor-1">Orange</button> -->
           <!-- <button class="mb-2 btn btn-mycolor-2">Blue</button> -->
           <!-- <button class="mb-2 btn btn-mycolor-3">Green</button> -->
+          <div class="btn-group mb-2 me-2">
+            <button type="button" class="btn btn-primary">Action 1</button>
+            <button type="button" class="btn btn-primary">
+              Other Action 1
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Option 1.1</a></li>
+              <li><a class="dropdown-item" href="#">Option 1.2</a></li>
+            </ul>
+          </div>
+
+          <!-- Button Group 2 -->
+          <div class="btn-group mb-2 me-2">
+            <button type="button" class="btn btn-success">Action 2</button>
+            <button
+              type="button"
+              class="btn btn-success dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Option 2.1</a></li>
+              <li><a class="dropdown-item" href="#">Option 2.2</a></li>
+            </ul>
+          </div>
+
+          <!-- Button Group 3 -->
+          <div class="btn-group mb-2">
+            <button type="button" class="btn btn-warning text-dark">
+              Action 3
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning text-dark dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Option 3.1</a></li>
+              <li><a class="dropdown-item" href="#">Option 3.2</a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -247,6 +302,27 @@
       <section>
         <h2>Spinners</h2>
         <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-info" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </section>
